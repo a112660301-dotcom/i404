@@ -1,81 +1,110 @@
 <!doctype html>
 <html lang="zh-TW">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="blob:https://chatgpt.com/9c80bfc2-615b-420d-bdfa-931a29b1d6c4" crossorigin="anonymous"></script>
- 
-  </head>
- 
-  
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>個人履歷</title>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid text-center">
-        
-            </li>
-          </ul>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+
+<!-- NAVBAR（可留空或之後補） -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <span class="navbar-brand">個人履歷</span>
+  </div>
+</nav>
+
+<!-- 主內容 -->
+<div class="container my-4">
+
+  <!-- 基本資料區 -->
+  <div class="row g-4 bg-white rounded shadow-sm p-4 align-items-center">
+
+    <!-- 左：照片 -->
+    <div class="col-md-4 text-center">
+      <img src="個人履歷.jpg" class="img-fluid rounded" style="max-width:300px;">
+    </div>
+
+    <!-- 右：基本資料 -->
+    <div class="col-md-8">
+      <h4 class="mb-3">基本資料</h4>
+      <p>姓名：邱珮淳</p>
+      <p>聯絡電話：0961-xxx-ooo</p>
+      <p>Email：a112660301@gm7.usc.edu.tw</p>
+      <p>就讀：實踐大學 東南亞學程</p>
+    </div>
+
+  </div>
+
+  <!-- Accordion 區 -->
+  <div class="accordion mt-5" id="accordionExample">
+
+    <!-- About Me -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne">
+          個人簡介 About Me
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          我是東南亞學程在學學生，對跨文化交流、行銷企劃與內容製作具有高度興趣，
+          具備專題研究與簡報製作經驗。
         </div>
       </div>
-    </nav>
+    </div>
 
-        
-          <div class="row g-0 bg-body-secondary position-relative">
-        <div class="col-md-6 mb-md-0 p-md-4">
-          <img src="個人履歷.jpg"  width="300" height="450">
+    <!-- Skills -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseTwo">
+          技能 Skills
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          • PowerPoint / Canva<br>
+          • 基礎 HTML / CSS<br>
+          • 簡報與專題研究能力
         </div>
-        <div class="col-md-6 p-4 ps-md-0">
-          <h5 class="mt-0">基本資料</h5>
-          <p>姓名：邱珮淳 <p/>
-            
-          <p>聯絡電話：0961-xxx-ooo<p/>
-            
-          <p>Email： a112660301@gm7.usc.edu.tw<p/>
-            
-          <p>就讀：實踐大學東南亞學程<p/>
+      </div>
+    </div>
 
-       
-
-    <div class="row">
-        <!-- commment -->
-        
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                Accordion Item #1
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-              <div class="accordion-body">
-                <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                Accordion Item #2
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                Accordion Item #3
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
+    <!-- Projects -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseThree">
+          課堂專案 / 作品
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          • 東南亞學程形象影片企劃<br>
+          • 課堂研究專題與成果簡報
         </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Bootstrap JS（一定要放 body 最後） -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>
